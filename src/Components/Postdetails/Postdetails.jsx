@@ -9,7 +9,6 @@ function Postdetails() {
   const location = useLocation();
   const apiurl = `https://andremoore-97bcb-default-rtdb.firebaseio.com/AndreMoore/${location.state.Postid}.json`;
 
-  console.log(postData)
   useEffect(() => {
     fetch(apiurl)
       .then((response) => response.json())
